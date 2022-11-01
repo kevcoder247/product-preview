@@ -1,0 +1,39 @@
+:root{
+  /* Colors */
+
+  /* Primary */
+--Dark-cyan:hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+  /* Typography */
+  
+  /* Body copy */
+--Font-size: 59px;
+
+    /* Font */
+--Font-family-Montserrat: 'Montserrat', sans-serif;
+--Font-family-Fraunces:'Fraunces', serif;
+--weight: 700;
+}
+
+body{
+  background-color: var(--Dark-cyan)
+}
+
+.container{
+  width: 375px;
+  height: 600px;
+  background-color: var(--Cream);
+  /* border: 3px solid black;  */
+  border-radius: 15px;
+  margin: auto;
+}
+
+img{
+width: 100%;
+}
