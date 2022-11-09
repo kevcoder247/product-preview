@@ -27,7 +27,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container{
@@ -38,11 +38,12 @@ body{
   border-radius: 15px;
   padding-bottom: 5px;
 }
-
+.destop-image{
+  display: none;
+ }
 img{
 max-width: 100%;
 border-radius: 10px 10px 0px 0px;
-
 }
 
 .text-section{
@@ -65,14 +66,13 @@ h1{
   line-height: .9;
   font-family: var(--Font-family-Fraunces);
   font-weight: var(--weight);
-
 }
 .body-copy{
-  font-size: 13px;
+  font-size: 14px;
   margin-top: -36px;
   color: var(--Dark-grayish-blue); 
   font-family: var(--Font-family-Montserrat);
-  word-spacing: 2px;
+  word-spacing: -2px;
   /* border: 1px solid red; */
   width: 86%;
   line-height: 1.4;
@@ -97,7 +97,7 @@ li:first-child{
   
 }
 li:last-child{
-  color: grey;
+  color: var(--Dark-grayish-blue); 
   align-self: center;
   text-decoration: line-through;
   font-size: 12px;
@@ -107,7 +107,6 @@ li:last-child{
 .cart-btn{
   display: flex;
   justify-content: center;
-  
 }
 
 button{
@@ -115,8 +114,91 @@ button{
   border: none;
   border-radius: 5px;
   background-color: var(--Dark-cyan);
-  font-size: 1rem;
+  font-size: 12px;
   width: 80%;
   height: 50px;
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
  }
+
+ .cart-logo{
+  /* border: 1px solid black; */
+  width: 13px;
+ }
+
+
+ @media(min-width: 800px){
+  .container{
+    width: 800px;
+    /* background-color: black; */
+  }
+
+.mobile-image{
+ display: none;
+}
+
+ .destop-image{
+  display: block;
+  /* border: 2px solid red; */
+  background-color: yellow;
+  width: 50%;
+  height: 605px;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 12px;
+ }
+
+ p:first-child{
+  /* color: pink; */
+  /* border: 2px solid red; */
+  position: relative;
+  bottom: 35px;
+ }
+
+ .text-section{
+  /* border: 2px solid black; */
+  width: 44%;
+  position: relative;
+  float: right;
+  top: -536px;
+  letter-spacing: 1px; 
+ }
+ 
+ h1{
+  font-size: 2.6rem;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: 20px;
+ }
+
+ .body-copy{
+  font-size: 16px;
+  line-height: 26px;
+  /* border: 2px solid black; */
+  position: relative;
+  bottom: -6px;
+  line-height: 1.9;
+ }
+
+ .price-section{
+  margin-top: 50px;
+ }
+
+ li:first-child{
+  font-size: 40px;  
+}
+
+li:last-child{
+  font-size: 15px;
+}
+
+button{
+  position: relative;
+  left: 400px;
+  top: -115px;
+  width: 70%;
+  
+}
+}
+/* end of min width 800px */
